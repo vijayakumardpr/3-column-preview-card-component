@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  color: hsla(0, 0%, 100%);
+  font-size: 15px;
+}
+
+.cars {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: repeat(3, 300px);
+  padding-top: 60px;
+  padding-bottom: 5px;
+}
+
+.car {
+  padding: 2em;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.car img {
+  width: 50px;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 10000px;
+  padding: 0.75em 1.5em;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.75rem;
+}
+
+.btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-sedans:hover {
+  border: 1px solid hsla(0, 0%, 100%);
+  background-color: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%);
+}
+
+.btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-suvs:hover {
+  border: 1px solid hsla(0, 0%, 100%);
+  background-color: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn-luxury:hover {
+  border: 1px solid hsla(0, 0%, 100%);
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%);
+}
+
+@media (min-width: 650px) {
+  .cars {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 350px;
+  }
+
+  .btn {
+    margin-top: 50px;
+  }
+
+  .sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5em;
+  }
+
+  .luxury {
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0;
+  }
+}
